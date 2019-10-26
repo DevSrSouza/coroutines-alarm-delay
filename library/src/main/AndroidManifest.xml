@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.devsrsouza.coroutinesalarmdelay">
+
+    <application>
+        <receiver android:name=".internal.AlarmDelayReceiver">
+            <intent-filter>
+                <action android:name="br.com.devsrsouza.coroutinesalarmdelay.ALARM_DELAY" />
+                <data android:scheme="id" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
